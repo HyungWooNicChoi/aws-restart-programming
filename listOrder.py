@@ -1,47 +1,3 @@
-#numbBanana = input("How many?")
-
-#number of task to be done. Will keep the while loop going until all the tasks are done.
-#task = 1
-
-#while task > 0 :
-#    if numbBanana.isnumeric() == True:
-#        #if the input is a number do one of the following
-#        #put int() to convert the numbBanana value to number
-#        if int(numbBanana) >= 5 :
-#            print("Alot of banans")
-#            task -= 1
-#        elif int(numbBanana) > 1 and int(numbBanana) < 5 :
-#            print("Few bananas")
-#            task -= 1
-#        elif int(numbBanana) == 1 :
-#            print("A banana")
-#            task -= 1
-#        else:
-#            print("No bananas")
-#            task -= 1
-#    else:
-#        #if the input is not a number try again
-#        print("Not a number, try again.")
-#        numbBanana = input("How old?")
-
-employee_age = [25, 18, 40, 35, 60, 55, 27]
-
-age_threshold = 50
-
-#for e_age in employee_age:
-#    if e_age < age_threshold:
-#        print(e_age)
-
-#result = [age for age in employee_age if age < 50]
-#print(result)
-
-forResult = []
-
-for i in range(len(employee_age)):
-    if employee_age[i] < age_threshold:
-        forResult.append(employee_age[i])
-
-#print(forResult)
 def ascendingOrder(orderList):
 
     orderedResult = []
@@ -105,17 +61,3 @@ def descendingOrder(orderList):
                 break
 
     return orderedResult
-
-myResult1 = ascendingOrder(forResult)
-print(myResult1)
-
-myResult2 = ascendingOrder(employee_age)
-print(myResult2)
-
-print()
-
-myResult3 = descendingOrder(forResult)
-print(myResult3)
-
-myResult4 = descendingOrder(employee_age)
-print(myResult4)
