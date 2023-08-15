@@ -110,6 +110,8 @@ def primeTextRead(fileDirectory):
     try:
         #Opens the txt file in read only.
         with open(fileDirectory, "r") as readFile:
+            print("This is the text file contents")
+            print()
             print(readFile.read())
             readFile.close()
     except:
