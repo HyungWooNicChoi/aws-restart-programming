@@ -30,7 +30,9 @@ def primeListMaker():
             #put int() to convert the countRange value to number.
             #Check if countRange is greater than 1.
             if int(countRange) > 1:
-                for i in range(int(countRange)):
+                #Have '+1' on countRange so that the range number itself is included.
+                #Example: if range of 10, the for loop counts from 2 to 10 instead of 2 to 9.
+                for i in range(2, int(countRange) + 1):
                     #Boolean to check if it is prime. Starts true thn becomes false if number can be divided by 
                     #another.
                     isPrime = True
